@@ -1,15 +1,24 @@
-div.runner {
-  width: 250px;
-  display: block;
-  list-style-type:armenian;
-  justify-content: center;
-  font-size: 12px;
-font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif; 
-border-style: solid;
-border-width: 1px;
-border-color: rgb(187, 187, 187);
-padding: 30px
 
+div.bikes {
+  width: 250px;
+  /* display: block; */
+  list-style-type: armenian;
+  /* justify-content: center; */
+  font-size: 12px;
+  font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  border-color: rgb(187, 187, 187);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e1f1ff;
+}
+
+div.bikes:last-child {
+  border-bottom: none;
+}
+
+ol, ul {
+	list-style: none;
 }
 
 img {
@@ -20,4 +29,40 @@ img {
 .reviews {
   font-weight: 300;
   font-size: 10px;
+}
+
+.App {
+  display: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  max-width: 960px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* text-transform: uppercase;/*
+/* } */
+}
+
+body {
+  background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  font-weight: 200;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 14px;
 }
