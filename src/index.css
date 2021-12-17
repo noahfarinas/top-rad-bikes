@@ -32,26 +32,20 @@ img {
 }
 
 .App {
-  display: center;
-  justify-content: center;
-  background-color: white;
-  width: 100%;
-  max-width: 960px;
-  background-color: white;
-  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
   padding: 15px 25px;
   width: 100%;
   max-width: 960px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   /* text-transform: uppercase;/*
 /* } */
 }
 
 body {
-  background-color: #60a9ff;
+  background-color: #d43900;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,10 +53,45 @@ body {
 }
 
 h2 {
-  font-weight: 200;
+  font-weight: 500;
 }
 
-h3 {
+h3.price {
   font-weight: 200;
   font-size: 14px;
+}
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #284972;
+}
+
+
+.feature{
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #d0d2d4;
+}
+
+.feature:last-child{
+  border-bottom: 1px solid #d0d2d4;
+}
+
+
+
+
+@media (min-width: 900px){
+  .App {
+    flex-direction: row;
+  }
+  div.bikes {
+    border-bottom: none;
+    border-right: 1px solid #d0d2d4;
+    padding: 25px 50px;
+  }
+  div.bikes:last-child {
+    border-right: none;
+  }
 }

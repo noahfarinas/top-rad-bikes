@@ -1,36 +1,51 @@
 function App() {
   return (
     <div className="App">
-      <h1>Top Rad Power Bikes</h1>
       <div className="bikes">
-          <img src="./images/runnerplus.jpeg"/>
+        <img src="https://cdn.shopify.com/s/files/1/0799/9645/products/RadRunner_Plus_Right_View_3000_1_800x.jpg?v=1613000410" />
         <h2>Rad Runner Plus</h2>
-        <h3>4.5 stars <a className="reviews" href="https://www.google.com/search?q=google+rad+runner+plus+reviewsz&oq=google+rad+runner+plus+reviewsz&aqs=chrome..69i57j69i64.4319j0j7&sourceid=chrome&ie=UTF-8">909 reviews</a> </h3>
+        {/* <img src="./images/star4.png" className="stars" /> */}
+
+        
+
         <h3>$1,799</h3>
-          <h4>Top Features</h4>
-          <ul>
-            <li> <b>Motor:</b> 750W Geared Hub</li>
-            <li>20" x 3.3" tires</li>
-            <li>74.3 lb</li>
-          </ul>
+        <ul className="pricing-features">
+          <li className="feature">
+            {" "}
+            <b>Motor:</b> 750W Geared Hub
+          </li>
+          <li className="feature">20" x 3.3" tires</li>
+          <li className="feature">74.3 lb</li>
+        </ul>
       </div>
 
       <div className="bikes">
-            <img src="./images/city5.jpeg" />
-            <h2>Rad City 5 Plus</h2>
-            <h3>$1,799</h3>
-            <h4>Top Features</h4>
-            <ul className="pricing-features">
-                <li className="feature"><b>Motor:</b> 750W Geared Hub</li>
-                <li class="feature">Hydraulic Disc Brakes</li>
-                <li class="feature">64 lb</li>
-            </ul>
+        <img src="https://cdn.shopify.com/s/files/1/0799/9645/products/City5STBlack_1_800x.jpg?v=1631737276" />
+        <h2>Rad City 5 Plus Step-Thru</h2>
+        <h3>$1,799</h3>
+        <ul className="pricing-features">
+          <li className="feature">
+            <b>Motor:</b> 750W Geared Hub
+          </li>
+          <li className="feature">Hydraulic Disc Brakes</li>
+          <li className="feature">64 lb</li>
+        </ul>
       </div>
 
-    
-
+      <div className="bikes">
+        <img src="https://cdn.shopify.com/s/files/1/0799/9645/products/RadWagon4_Orange_Right_View_2400_900x.jpg?v=1612311493" />
+        <h2>Rad Wagon 4</h2>
+        <h3>$1,899</h3>
+        <ul className="pricing-features">
+          <li className="feature">
+            <b>Motor:</b> 750W Geared Hub
+          </li>
+          <li className="feature">350 lb payload capacity</li>
+          <li className="feature">77 lb</li>
+        </ul>
       </div>
-  );                           
+    </div>
+  );
 }
 
-export default App
+export default App;
