@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/top-rad-bikes/static/css/main.19ad6e0b.css",
+    "main.js": "/top-rad-bikes/static/js/main.e5c8a183.js",
+    "index.html": "/top-rad-bikes/index.html",
+    "main.19ad6e0b.css.map": "/top-rad-bikes/static/css/main.19ad6e0b.css.map",
+    "main.e5c8a183.js.map": "/top-rad-bikes/static/js/main.e5c8a183.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19ad6e0b.css",
+    "static/js/main.e5c8a183.js"
+  ]
+}
