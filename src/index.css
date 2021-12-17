@@ -1,0 +1,23 @@
+div.runner {
+  width: 250px;
+  display: block;
+  list-style-type:armenian;
+  justify-content: center;
+  font-size: 12px;
+font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif; 
+border-style: solid;
+border-width: 1px;
+border-color: rgb(187, 187, 187);
+padding: 30px
+
+}
+
+img {
+  width: 200px;
+
+}
+
+.reviews {
+  font-weight: 300;
+  font-size: 10px;
+}
