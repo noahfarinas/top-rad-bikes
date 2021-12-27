@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:3001/top-rad-bikes -->
+<html lang="en" class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3001/top-rad-bikes/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3001/top-rad-bikes/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3001/top-rad-bikes/manifest.json">
+    <!--
+      Notice the use of /top-rad-bikes in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/top-rad-bikes/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js"></script><style>
+div.bikes {
+  width: 250px;
+  /* display: block; */
+  list-style-type: armenian;
+  /* justify-content: center; */
+  font-size: 12px;
+  font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  border-color: rgb(187, 187, 187);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e1f1ff;
+}
+
+div.bikes:last-child {
+  border-bottom: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img {
+  width: 200px;
+
+}
+
+.reviews {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.App {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* text-transform: uppercase;/*
+/* } */
+}
+
+body {
+  background-color: #d43900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3.price {
+  font-weight: 300;
+  font-size: 14px;
+}
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #284972;
+}
+
+
+.feature{
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #d0d2d4;
+}
+
+.feature:last-child{
+  border-bottom: 1px solid #d0d2d4;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+@media (min-width: 900px){
+  .App {
+    flex-direction: row;
+  }
+  /* div.bikes {
+    border-bottom: none;
+    border-right: 1px solid #d0d2d4;
+  }
+  div.bikes:first-child {
+    border-bottom: none;
+    border-right: 1px solid #d0d2d4;
+  }
+
+  div.bikes:last-child {
+    border-right: none;
+  } */
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UsWUFBWTtFQUNaLG9CQUFvQjtFQUNwQix5QkFBeUI7RUFDekIsNkJBQTZCO0VBQzdCLGVBQWU7RUFDZixpRUFBaUU7RUFDakUsZ0NBQWdDO0VBQ2hDLGFBQWE7RUFDYixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtDQUNDLGdCQUFnQjtBQUNqQjs7QUFFQTtFQUNFLFlBQVk7O0FBRWQ7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLG9DQUFvQztFQUNwQyxtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEI7TUFDSTtBQUNOOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxtQkFBbUI7RUFDbkIsY0FBYztBQUNoQjs7O0FBR0E7RUFDRSxnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLGdDQUFnQztBQUNsQzs7QUFFQTtFQUNFLGFBQWE7RUFDYixlQUFlO0VBQ2YsVUFBVTtFQUNWLHFDQUFxQztBQUN2Qzs7O0FBR0E7RUFDRTtJQUNFLG1CQUFtQjtFQUNyQjtFQUNBOzs7Ozs7Ozs7OztLQVdHO0FBQ0wiLCJzb3VyY2VzQ29udGVudCI6WyJcbmRpdi5iaWtlcyB7XG4gIHdpZHRoOiAyNTBweDtcbiAgLyogZGlzcGxheTogYmxvY2s7ICovXG4gIGxpc3Qtc3R5bGUtdHlwZTogYXJtZW5pYW47XG4gIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICBmb250LXNpemU6IDEycHg7XG4gIGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhIE5ldWUnLCBBcmlhbCwgJ0x1Y2lkYSBHcmFuZGUnLCBzYW5zLXNlcmlmO1xuICBib3JkZXItY29sb3I6IHJnYigxODcsIDE4NywgMTg3KTtcbiAgcGFkZGluZzogMzBweDtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlMWYxZmY7XG59XG5cbmRpdi5iaWtlczpsYXN0LWNoaWxkIHtcbiAgYm9yZGVyLWJvdHRvbTogbm9uZTtcbn1cblxub2wsIHVsIHtcblx0bGlzdC1zdHlsZTogbm9uZTtcbn1cblxuaW1nIHtcbiAgd2lkdGg6IDIwMHB4O1xuXG59XG5cbi5yZXZpZXdzIHtcbiAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgZm9udC1zaXplOiAxMHB4O1xufVxuXG4uQXBwIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpO1xuICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICBwYWRkaW5nOiAxNXB4IDI1cHg7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXgtd2lkdGg6IDkwMHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIC8qIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7Lypcbi8qIH0gKi9cbn1cblxuYm9keSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNkNDM5MDA7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbn1cblxuaDIge1xuICBmb250LXdlaWdodDogNDAwO1xufVxuXG5oMy5wcmljZSB7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG4gIGZvbnQtc2l6ZTogMTRweDtcbn1cbi5wcmljaW5nLWZlYXR1cmVzIHtcbiAgbWFyZ2luOiA1MHB4IDAgMjVweDtcbiAgY29sb3I6ICMyODQ5NzI7XG59XG5cblxuLmZlYXR1cmV7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIGxldHRlci1zcGFjaW5nOiAxcHg7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgbGluZS1oZWlnaHQ6IDEuNTtcbiAgcGFkZGluZzogMTVweCAwO1xuICBib3JkZXItdG9wOiAxcHggc29saWQgI2QwZDJkNDtcbn1cblxuLmZlYXR1cmU6bGFzdC1jaGlsZHtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNkMGQyZDQ7XG59XG5cbi5tb2RhbCB7XG4gIGRpc3BsYXk6IG5vbmU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgei1pbmRleDogMTtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjI1KTtcbn1cblxuXG5AbWVkaWEgKG1pbi13aWR0aDogOTAwcHgpe1xuICAuQXBwIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICB9XG4gIC8qIGRpdi5iaWtlcyB7XG4gICAgYm9yZGVyLWJvdHRvbTogbm9uZTtcbiAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjZDBkMmQ0O1xuICB9XG4gIGRpdi5iaWtlczpmaXJzdC1jaGlsZCB7XG4gICAgYm9yZGVyLWJvdHRvbTogbm9uZTtcbiAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjZDBkMmQ0O1xuICB9XG5cbiAgZGl2LmJpa2VzOmxhc3QtY2hpbGQge1xuICAgIGJvcmRlci1yaWdodDogbm9uZTtcbiAgfSAqL1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><popup><h3>My Popup</h3></popup><div class="bikes"><div class="bikelist"><img src="./React App_files/RadRunner_Plus_Right_View_3000_1_800x.jpg" alt="runnerpluspicture"><h2>Rad Runner Plus</h2><h3 class="price">$1,799</h3><ul class="pricing-features"><li class="feature"><b>Motor:</b> 750W Geared Hub</li><li class="feature">20" x 3.3" tires</li><li class="feature">74.3 lb</li></ul></div></div><div class="bikes"><div class="bikeList"><img src="./React App_files/City5STBlack_1_800x.jpg" alt="citypicture"><h2>Rad City 5 Plus Step-Thru</h2><h3 class="price">$1,799</h3><ul class="pricing-features"><li class="feature"><b>Motor:</b> 750W Geared Hub</li><li class="feature">Hydraulic Disc Brakes</li><li class="feature">64 lb</li></ul></div></div><div class="bikes"><div class="bikelist"><img src="./React App_files/RadWagon4_Orange_Right_View_2400_900x.jpg" alt="wagonphoto"><h2>Rad Wagon 4</h2><h3 class="price">$1,899</h3><ul class="pricing-features"><li class="feature"><b>Motor:</b> 750W Geared Hub</li><li class="feature">350 lb payload capacity</li><li class="feature">77 lb</li></ul></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+<iframe id="webpack-dev-server-client-overlay" src="./React App_files/saved_resource.html" style="position: fixed; inset: 0px; width: 100vw; height: 100vh; border: none; z-index: 2147483647;"></iframe></body><loom-container id="lo-engage-ext-container"><loom-shadow classname="resolved"></loom-shadow></loom-container><loom-container id="lo-companion-container"><loom-shadow classname="resolved"></loom-shadow></loom-container></html>
