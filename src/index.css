@@ -53,11 +53,11 @@ body {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h3.price {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 14px;
 }
 .pricing-features {
@@ -86,12 +86,16 @@ h3.price {
   .App {
     flex-direction: row;
   }
-  div.bikes {
+  /* div.bikes {
     border-bottom: none;
     border-right: 1px solid #d0d2d4;
-    padding: 25px 50px;
   }
+  div.bikes:first-child {
+    border-bottom: none;
+    border-right: 1px solid #d0d2d4;
+  }
+
   div.bikes:last-child {
     border-right: none;
-  }
+  } */
 }
