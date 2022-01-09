@@ -39,12 +39,11 @@ const cargo = [
   },
 ];
 
-    </div>
+    
 function Cargo() {
   const UTILITY = cargo.map(_item => (
     
     <div className="bikelist">   
-   
         <img src={_item.image} alt={_item.imageAlt} />
         <h2>{_item.bikeModel}</h2>
         <h3 className="price">{_item.price}</h3>

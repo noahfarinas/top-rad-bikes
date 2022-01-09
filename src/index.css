@@ -1,28 +1,40 @@
 
+
 div.bikes {
   width: 250px;
-  /* display: block; */
-  list-style-type: armenian;
-  /* justify-content: center; */
-  font-size: 12px;
   font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
   border-color: rgb(187, 187, 187);
-  padding: 30px;
+  padding: 10px;
+
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #e1f1ff;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 1px solid #e1f1ff; */
 }
+div.bikelist {
+  padding: inherit;
+  width: 250px;
+  font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  border-color: rgb(187, 187, 187);
+  padding: 10px;
 
-div.bikes:last-child {
-  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* div.bikes:last-child {
+  border-bottom: none;
+} */
 
 ol, ul {
 	list-style: none;
 }
 
 img {
-  width: 200px;
+  width: 250px;
+  margin-left: px;
 
 }
 
@@ -32,18 +44,15 @@ img {
 }
 
 .page {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  background-color: white;
+  border-radius: 10px;
   padding: 15px 25px;
-  margin: 10px;
-  width: 100%;
-  max-width: 900px;
-  min-width: 375px;
+  width: 94.5%;
+  max-width: 960px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* text-transform: uppercase;/*
-/* } */
+  text-transform: uppercase;
 }
 
 body {
@@ -52,6 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin: 0;
 }
 
 h2 {
@@ -63,7 +73,7 @@ h3.price {
   font-size: 14px;
 }
 .pricing-features {
-  margin: 50px 0 25px;
+  padding: 0vh;
   color: #284972;
 }
 
@@ -75,24 +85,52 @@ h3.price {
   line-height: 1.5;
   padding: 15px 0;
   border-top: 1px solid #d0d2d4;
+  
 }
 
 .feature:last-child{
   border-bottom: 1px solid #d0d2d4;
 }
 
-.modal {
+/* .modal {
   display: none;
   position: fixed;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.25);
-}
-
+} */
+.title
+ {
+  font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+ }
 
 @media (min-width: 900px){
   .page {
     flex-direction: row;
+    display: flex;
+    text-align: center;
   }
+
+
+  media (min-width: 900px){
+    .panel {
+      flex-direction: row;
+    }
+    .bikses {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      padding: 25px 50px;
+    }
+    ..bikes:last-child {
+      border-right: none;
+    }
+  }
+
   /* div.bikes {
     border-bottom: none;
     border-right: 1px solid #d0d2d4;
