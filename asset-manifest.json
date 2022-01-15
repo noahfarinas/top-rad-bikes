@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/top-rad-bikes/static/css/main.fe9b7b46.css",
-    "main.js": "/top-rad-bikes/static/js/main.e676b597.js",
+    "main.css": "/top-rad-bikes/static/css/main.f474dc6d.css",
+    "main.js": "/top-rad-bikes/static/js/main.dc3a20a9.js",
     "index.html": "/top-rad-bikes/index.html",
-    "main.fe9b7b46.css.map": "/top-rad-bikes/static/css/main.fe9b7b46.css.map",
-    "main.e676b597.js.map": "/top-rad-bikes/static/js/main.e676b597.js.map"
+    "main.f474dc6d.css.map": "/top-rad-bikes/static/css/main.f474dc6d.css.map",
+    "main.dc3a20a9.js.map": "/top-rad-bikes/static/js/main.dc3a20a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe9b7b46.css",
-    "static/js/main.e676b597.js"
+    "static/css/main.f474dc6d.css",
+    "static/js/main.dc3a20a9.js"
   ]
 }
