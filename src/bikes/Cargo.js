@@ -141,6 +141,9 @@ export default function App() {
 
     bikes.push(
       <>
+      <div className="page">
+        
+        
         <div className="bikelist">
           <img src={bike.image} alt={bike.imageAlt} />
           <h2>{bike.bikeModel}</h2>
@@ -152,6 +155,7 @@ export default function App() {
             <li className="feature">{bike.payload} payload capacity</li>
             <li className="feature">{bike.weight}</li>
           </ul>
+        </div>
         </div>
       </>
     );
