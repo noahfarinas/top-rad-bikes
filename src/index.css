@@ -8,7 +8,6 @@ div.bikes {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 1px solid #e1f1ff; */
 }
 div.bikelist {
   padding: inherit;
@@ -22,9 +21,6 @@ div.bikelist {
   justify-content: center;
   align-items: center;
 }
-/* div.bikes:last-child {
-  border-bottom: none;
-} */
 
 ol,
 ul {
@@ -32,7 +28,7 @@ ul {
 }
 
 img {
-  width: 250px;
+  width: 200px;
   margin-left: px;
 }
 
@@ -46,11 +42,12 @@ img {
   border-radius: 10px;
   padding: 15px 25px;
   width: 94.5%;
-  width: 500px;
-  display: flex;
+  width: 400px;
+  display: inline-block;
   flex-direction: column;
   text-align: center;
   text-transform: uppercase;
+  margin: 10px;
 }
 
 body {
@@ -64,12 +61,13 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
 }
 
 h2 {
   font-weight: 400;
+  text-align: center;
+  font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
 }
 
 h3.price {
@@ -94,12 +92,6 @@ h3.price {
   border-bottom: 1px solid #d0d2d4;
 }
 
-/* .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.25);
-} */
 .title {
   font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
