@@ -1,3 +1,10 @@
+.App {
+  display:inline;
+
+  max-width: 1200px;
+  margin: auto;
+}
+
 div.bikes {
   width: 250px;
   font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
@@ -11,7 +18,7 @@ div.bikes {
 }
 div.bikelist {
   padding: inherit;
-  width: 350px;
+  width: 250px;
   font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   border-color: rgb(187, 187, 187);
   padding: 10px;
@@ -41,13 +48,13 @@ img {
   background-color: white;
   border-radius: 10px;
   padding: 15px 25px;
-  width: 94.5%;
+  width: 100%;
   width: 400px;
   display: inline-block;
   flex-direction: column;
   text-align: center;
   text-transform: uppercase;
-  margin: 10px;
+  margin: auto;
 }
 
 body {
@@ -56,11 +63,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
+  margin: auto;
 }
 
 h1 {
-  text-align: center;
+  margin: auto;
 }
 
 h2 {
@@ -86,6 +93,8 @@ h3.price {
   line-height: 1.5;
   padding: 15px 0;
   border-top: 1px solid #d0d2d4;
+  width: 200px;
+  margin: auto  ;
 }
 
 .feature:last-child {
